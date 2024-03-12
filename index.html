@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header id="top">
+    <h1>CSS Flexbox & Positioning in Layouts</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="starting">
+      <h2>Getting Started with CSS Flexbox</h2>
+      <p>There are some required properties for your parent container, as well as plenty of optional ones that you can use on the parents or children. Read the content below for more information and details.</p>
+      <div>
+        <section>
+          <h3>Flexbox First Steps</h3>
+          <img src="https://assets.codepen.io/1351055/resort1.jpg" alt="a blue pool surrounded by huts with pointed roofs and palm trees">
+          <p>To make elements display using flexbox, you have to apply some styles to the container itself. First, tell the container to <code>display: flex;</code> and you should see a difference in your page right away. Remember, that the containers/parents are the elements holding the content items you want to style. On this page, we have a section for each topic, so each section is the parent of its content. The header is the parent of the h1 and nav, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Additional Container Styles</h3>
+          <img src="https://assets.codepen.io/1351055/resort2.jpg" alt="a woman wearing a hat and standing in a shaded pool with the ocean in the background">
+          <p>By default, the flex container will display its elements in a row, with each taking up part of that container's width. The <code>flex-direction</code> property allows you to tell the elements to display in a column instead of a row. The <code>flex-wrap</code> property will allow your content to take up multiple rows or columns, instead of just one.</p>
+        </section>
+  
+        <section>
+          <h3>Styles for Flex Items</h3>
+          <img src="https://assets.codepen.io/1351055/resort4.jpg" alt="a wooden deck covered with wooden chaise lounges, next to a blue pool with the ocean in the background">
+          <p>The elements inside of a parent container displaying flex can also have styles added to control their size and arrangement, as well as how they can grow as the screen width changes. The <code>order</code> property allows you to control the order in which elements are displayed. The <code>flex-grow</code> property can be set to allow certain items to be larger if there is space. <code>flex-shrink</code> does the opposite of <code>flex-grow</code>. The <code>flex-basis</code> property allows you to define the size of an element before the other elements fill up the remaining space. <code>align-self</code> allows you to control alignment on a specific item so that it can differ from the others in the same container.</p>
+        </section>
+  
+        <section>
+          <h3>Container Styles for Arranging Children</h3>
+          <img src="https://assets.codepen.io/1351055/resort3.jpg" alt="a blue pool at sunset, surrounded by pergolas, cream umbrellas, and palm trees">
+          <p>The way your content displays in the containers may not line up in the way you want, and there are some properties you can add to the parent container to help with that. The <code>justify-content</code> property controls alignment along the main axis. The <code>align-items</code> property controls alignment along the cross-axis. You can create space between your elements using the <code>gap</code> property.</p>
+        </section>
+  
+        <section>
+          <h3>Unique Flexbox Powers</h3>
+          <img src="https://assets.codepen.io/1351055/resort5.jpg" alt="a light sand beach with the ocean in the background, sprinkled with umbrellas, wooden chairs, and palm trees">
+          <p>One of the things that flexbox can do is easily center-align a container both horizontally AND vertically in a container. Imagine a popup or modal window on a website. You'd likely want that to be perfectly centered in the screen no matter what size that screen is. Flexbox can do that!</p>
+        </section>
+  
+        <section>
+          <h3>Additional Information</h3>
+          <img src="https://assets.codepen.io/1351055/resort6.jpg" alt="a blue pool surrounded by deck chairs, umbrellas, and palm frond-covered shade structures">
+          <p>While flexbox can be used on its own for layout, usually you'll find this combined with CSS grid to control page layout and alignment of items inside of containers in a grid layout. Don't forget that you can test out the different flexbox properties with the dev tools as well! That can make it easy to see how the different settings will change your layout.</p>
+        </section>
+      </div>
+    </section>
+  
+    <section id="more-flex">
+      <h2>Another Layout with Flexbox</h2>
+      <p>You aren't restricted to using flexbox for a container full of large items. The properties allow you to easily control details in your layouts.</p>
+      <div>
+        <span id="one">1</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+          <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+        </svg>
+  
+        <span id="two">2</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+          <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+        </svg>
+  
+        <span id="three">3</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+          <path d="M7.5 8h3v8l-2 -1" />
+          <path d="M16.5 8h-2.5a0.5 .5 0 0 0 -.5 .5v3a0.5 .5 0 0 0 .5 .5h1.423a0.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+        </svg>
+      </div>
+    </section>
+  
+    <section>
+      <h2>The Horizontal &amp; Vertical Spacing Trick</h2>
+      <p>I have written some JavaScript for you that will make a popup appear on the page. You can click on the button below to see it and should notice that the alignment isn't great. We can easily fix that with flexbox.</p>
+      <button id="viewModal">View the Popup</button>
+    </section>
+  
+    <section id="colors">
+      <h2>More Flexbox Practice</h2>
+      <p>These are the colors from the theme I used on this page. Try some different flexbox settings on this section to see how it changes the way they look on the page.</p>
+      <div id="boxes">
+        <div id="box1"><p><span>dark teal: #026873</span></p></div>
+        <div id="box2"><p><span>medium teal: #027373</span></p></div>
+        <div id="box3"><p><span>green: #078C5B</span></p></div>
+        <div id="box4"><p><span>lime: #A0A603</span></p></div>
+        <div id="box5"><p><span>cream: #F2D8A7</span></p></div>
+      </div>
+    </section>
+  
+    <section id="position-intro">
+      <h2>Understanding CSS Positioning</h2>
+      <p>CSS positioning settings are really powerful tools when it comes to layouts. If you want to layer things on top of each other, or make an element stay in one place on the page at all times, positioning makes that easy.</p>
+      <section>
+        <h3>Positioning Properties in CSS</h3>
+        <p>There are some valid property settings that you can use for positioning, read about them and their use below.</p>
+        <dl>
+          <dt><code>position: static;</code></dt>
+            <dd>The default value for all page elements, you cannot use the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> properties, or any <code>z-index</code> on a static element.</dd>
+  
+          <dt><code>position: relative;</code></dt>
+            <dd>These elements are positioned as normal in the document, and changes to the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> properties move the element relative to its regular place on the page. Does work with the <code>z-index</code> property, and does not change the layout or position of other items.</dd>
+  
+          <dt><code>position: absolute;</code></dt>
+            <dd>These elements are removed from the normal document flow, and no space on the page is left for the element. These are positioned relative to their closest <em>positioned</em> ancestor, or to the containing block (if there are no positioned ancestors). Changes to the <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code> properties move the element, and this will work with the <code>z-index</code> property as well.</dd>
+  
+          <dt><code>position: fixed;</code></dt>
+            <dd>These elements are removed from the normal document flow, and no space on the page is left for the element. These are positioned relative to the initial containing block (with some exceptions, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">see MDN for more detail</a>), and their final position is based on the settings of its <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties. This value always creates a stacking context, and the <code>z-index</code> property can be used to adjust where they are in that stack.</dd>
+  
+          <dt><code>position: sticky;</code></dt>
+            <dd>These elements are positioned according to the normal flow of the document, then offset relative to their nearest scrolling ancestor and containing block based on the values of their <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties. This value always creates a stacking context, and the <code>z-index</code> property can be used to adjust where they are in that stack.</dd>
+        </dl>
+      </section> 
+      <p>As you saw in this activity, there are multiple ways you might use positioning in your layouts. Be sure to test out other settings on your own sites to see how this works!</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Copyright &copy; 2023 - GIT215 - Prof. Barnett</p>
+    <p>For Educational Purposes Only</p>
+  </footer>
+  
+  <!-- back to top link using positioning -->
+  <a href="#top" aria-label="back to top of page" id="btt">
+    <svg viewBox="0 0 512 512" width="100">
+    <path d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z" />
+  </svg>
+  </a>
+  
+  <div id="modal" class="hidden">
+      <div>
+        <button id="closeModal" aria-label="close the modal window">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M10 10l4 4m0 -4l-4 4" />
+          </svg>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 9v2m0 4v.01" />
+          <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+        </svg>
+        <p>This is our popup window! You can close it by clicking the "X" in the upper-right corner.</p>
+      </div>
+    </div>
+  
+          
+          
+  <!--  
+    Credit for the images used below:
+  
+    resort1: Photo by <a href="https://unsplash.com/@jakeirish?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake Irish</a> on <a href="https://unsplash.com/photos/61OONDO7nrU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    resort2: Photo by <a href="https://unsplash.com/@chelseacgates?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chelsea Gates</a> on <a href="https://unsplash.com/photos/0653_wY0nRc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    resort3: Photo by <a href="https://unsplash.com/@fabiofistarol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fabio Fistarol</a> on <a href="https://unsplash.com/photos/qai_Clhyq0s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    resort4: Photo by <a href="https://unsplash.com/@akaunas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sasha Kaunas</a> on <a href="https://unsplash.com/photos/xEaAoizNFV8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    resort5: Photo by <a href="https://unsplash.com/fr/@tonyphamvn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tony Pham</a> on <a href="https://unsplash.com/photos/jWECaopdAH8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    resort6: Photo by <a href="https://unsplash.com/@atx_jamesj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Johnston</a> on <a href="https://unsplash.com/photos/DWHaprPqvmI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  -->
+</body>
+</html>
